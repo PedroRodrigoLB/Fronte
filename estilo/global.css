@@ -44,10 +44,7 @@ i#burguer{
     border-bottom: 1px solid black;
     border-top: 2px solid black;
 }
-i#burguer:hover {
-    background-color: rgba(0, 0, 0, 0.76);
-    color: white;
-}
+
 
 menu {
     background-color: white;
