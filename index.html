@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Site exemplo</title>
+
+    <link rel="stylesheet" href="estilo/global.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+
+
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <section class="topo">
+            <img src="imagens/favicon_io/android-chrome-150x150.png" alt="Imagem Produto">
+            <h1>Site exemplo</h1>
+        </section>
+        <i id="burguer"
+        class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+    
+        <section class="produto">
+            <a href="#"><div class="item">
+                    <div class="conteiner">
+                        <img src="imagens/favicon_io/android-chrome-150x150.png" alt="Imagem do produto">
+                        <h3 class="superior">Nome do produto</h3>
+                        <p>Descrição do produto como valor, itens, avaliação etc..</p>
+                        <h3 class="inferior">Entrar</h3>
+                    </div>
+            </div></a>
+            <a href="#"><div class="item">
+                    <div class="conteiner">
+                        <img src="imagens/favicon_io/android-chrome-150x150.png" alt="Imagem do produto">
+                        <h3 class="superior">Nome do produto</h3>
+                        <p>Descrição do produto como valor, itens, avaliação etc..</p>
+                        <h3 class="inferior">Entrar</h3>
+                    </div>
+            </div></a>
+            <a href="#"><div class="item">
+                    <div class="conteiner">
+                        <img src="imagens/favicon_io/android-chrome-150x150.png" alt="Imagem do produto">
+                        <h3 class="superior">Nome do produto</h3>
+                        <p>Descrição do produto como valor, itens, avaliação etc..</p>
+                        <h3 class="inferior">Entrar</h3>
+                    </div>
+            </div></a>
+            <a href="#"><div class="item">
+                    <div class="conteiner">
+                        <img src="imagens/favicon_io/android-chrome-150x150.png" alt="Imagem do produto">
+                        <h3 class="superior">Nome do produto</h3>
+                        <p>Descrição do produto como valor, itens, avaliação etc..</p>
+                        <h3 class="inferior">Entrar</h3>
+                    </div>
+            </div></a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/PedroRodrigoLB" target="_blank">&copy;Pedro Rodrigo</a></p>
+    </footer>
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >=768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 255, 0.774);   
+    border-bottom: 1px solid black;
+}
+
+section.topo{
+    height: 80px;
+    margin: auto;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;    
+}
+
+section.topo > img{
+    padding: 5px;
+    margin: 5px;
+}
+
+section.topo > h1{
+    color: white;
+    padding: 5px;
+    margin: auto;
+    
+    font-size: 2em;
+    text-shadow: 2px 2px 5px black;
+}
+
+i#burguer{
+    background-color: white;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-top: 2px solid black;
+}
+i#burguer:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+}
+
+menu {
+    background-color: white;
+    padding: 10px;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+    align-items: flex-start;
+}
+
+main{
+
+}
+
+section.produto {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+section.produto > a{
+    text-decoration: none;
+}
+div.item {
+    color: black;
+    width: 80vw;
+
+   
+    margin: 10px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+div.item > div.conteiner{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+    
+}
+
+div.item > div.conteiner > img{
+    max-width: 60%;
+    padding: 10px;
+    align-self: center;
+}
+
+div.item > div.conteiner > h3.superior{
+    padding: 5px;
+    font-size: 20px;
+ 
+}
+
+div.item > div.conteiner > p{
+    height: 20px;
+    font-size: 10px;
+}
+
+div.item > div.conteiner > h3.inferior{
+    background-color: blue;
+    color: white;
+    padding-top: 5px;
+    border-radius: 0px 0px 7px 7px ;
+}   
+
+footer{
+    background-color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer > p{
+    color: white;
+    height: 20px;
+    
+}
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
