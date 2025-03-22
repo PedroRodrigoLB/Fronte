@@ -7,7 +7,7 @@
 }
 
 header{
-    background-color: rgba(0, 0, 255, 0.774);   
+    background-color: blue;   
     border-bottom: 1px solid black;
 }
 
@@ -45,9 +45,8 @@ i#burguer{
     border-top: 2px solid black;
 }
 
-
 menu {
-    background-color: white;
+    background-color: white;    
     padding: 10px;
 }
 
@@ -74,6 +73,7 @@ menu > ul > li > a {
 
 section.produto {
     padding: 20px;
+    margin: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -86,7 +86,7 @@ section.produto > a{
 div.item {
     color: black;
     width: 80vw;
-
+    
    
     margin: 10px;
     text-align: center;
@@ -126,18 +126,23 @@ div.item > div.conteiner > h3.inferior{
     border-radius: 0px 0px 7px 7px ;
 }   
 
-footer{
-    background-color: black;
-    margin-top: 10px;
+footer {
     text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+    margin-top: 20px;
 }
 
 footer > p{
-    color: white;
-    height: 20px;
-    
+    color: white;    
 }
 footer > p > a{
     text-decoration: none;
     color: white;
+}
+
+footer > p > a:hover{
+    color: lightgray;
+    text-decoration: underline;
 }

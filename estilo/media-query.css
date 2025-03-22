@@ -1,36 +1,97 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints 
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet:768px até 992px
+Desktop:992px até 1200px
+Grandes telas: acima de 1200px
+*/
 @media screen and (min-width: 768px) {
-    
-    header{
-        border-bottom: 1.5px solid black;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-    }
 
     i#burguer{
         display: none;
     }
-
+    menu > ul > li {
+        display: inline-block;
+    }
     menu {
         display: block;
         background-color: blue;
     }
 
-    menu > ul > li {
-        display: inline-block;
+    div.item{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    header{
+        border-bottom: 1.5px solid black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    }
+    
+    menu > ul > li{
+        margin: 10px;
     }
 
+    menu > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
     menu > ul > li > a {
         box-shadow: 0px 0px 5px black;
         transition: 0.5s;
     }
-    
-    menu > ul > li > a:hover {
-        background-color: rgba(0, 0, 0, 0.76);
-        color: white;
+
+    div.item > div.conteiner > img{
+        height: 100px;
     }
 
-    main{
-        width: 768px;
+}
+
+@media screen and (min-width: 992px){
+    
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    
+    main {
+        height: 100vh;
+        width: 94vw;
+        margin: auto;
+
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+    }
+    section.detales{
+        background-color: lightcoral;
+        height: 1000px;
+        width: 500px;
+        margin: 10px;
+    }
+    section.produto{
+        
+    }
+
+    div.item > div.conteiner > img{
+        height: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        
+        width: 88vw;
+        margin: auto;
     }
 }

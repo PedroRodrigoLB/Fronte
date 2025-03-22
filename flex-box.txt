@@ -1,0 +1,58 @@
+"justify-content" - Ele vai fazer o alinhamento em relação ao eixo main-axis 
+
+                "flex-start" - O Primeiro item ira ficar grudado ao main-start, o espaço embrando ficara no final do eixo principal
+
+                "flex-end" - O ultimo item ira ficar grudado ao main-end, o espaço embranco ficara no inicio do eixo principal
+                
+                "center" - Ira calcular o centro do conteiner e todos os itens irao ficar alinhados com o centro distribuindo o espaço em branco entre o main-start e o main-end
+                
+                "space-between" - O primeiro elemento ficara colado no main-starte e o ultimo elemento ficara colado no main-end e os demais itens sera distribuidos com espaços iguais 
+            
+                "space-evenly" - O primeiro e o ultimo elementos nao ficaram colados nas estremidades, onde todos os itens tanto o primeiro e o ultimo terão o mesmo espaçamento
+
+                "space-around" - O elemento fica centralizado no espaçamento entre os elementos, tendo um espaçamento-elemento-espaçamento-espaçamento-elemento-espaçamento
+
+
+
+
+
+
+"align-content" - alinha os elementos no eixo transversal quando o contener possui "flex-flow: row wrap"  (empacotado)
+
+            "strech" - Ira dividir o tamanho do cross-axis em partes iguias por linha e ira utilizar a dimensão da divisão ampliando o elemento
+            
+            "flex-start" - Todos os Elementos irá colar no cross-start
+
+            "flex-end" - Todos os elementos irá colar no cross-end
+
+            "center" - Os elementos ficaram no centro do cross-axis, com espaço em branco nas extremidades 
+
+            "space-between" - Os elementos ficam nas extremidaes, com espaço em branco no centro do cross-axis
+
+            "space-evenly" - Espaçamento no cross-star e cross-end, tambem com espaçamento entre os elementos
+
+            "space-around" - Divide o eixo transversal em partes iguis, colocando os itens centralizados no elemento
+
+
+
+
+"align-items" - Sempre no sentido do eixo transversal cross-axis
+
+                "stretch" - esticar os elementos no sentido do cross-axis
+
+                "flex-start" - elemento fica grudado no cross-star, com espaço em branco para o cross-end
+
+                "flex-end" - elemento fica grudado no cross-end, com espaço em brnaco para o cross-start
+
+                "center" - o elemento ira ficar alinhado na metado do cross-axis
+
+
+
+"align-self" - Ele é aplicado diretamente ao item e tem relação com o cross-axis
+
+    "auto" - Herada caracteristica de alinhamento do pai
+    "flex-start" - Proximo do cross-start
+    "flex-end" - Proximo do cross-end
+    "center" - Centro do cross-axis
+    "stretch" - estica o elemento ao longo do cross-axis
+
